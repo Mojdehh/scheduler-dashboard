@@ -2,6 +2,12 @@ import React, { Component } from "react";
 import axios from "axios";
 import Loading from "./Loading";
 import Panel from "./Panel";
+import {
+  getTotalInterviews,
+  getLeastPopularTimeSlot,
+  getMostPopularDay,
+  getInterviewsPerDay
+ } from "helpers/selectors";
 
 import classnames from "classnames";
 
