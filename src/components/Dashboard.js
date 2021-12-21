@@ -50,6 +50,7 @@ class Dashboard extends Component {
       this.setState({ focused });
     }
 
+    // fetch data from API
     Promise.all([
       axios.get("/api/days"),
       axios.get("/api/appointments"),
@@ -82,7 +83,6 @@ class Dashboard extends Component {
       return <Loading />;
     }
 
-    console.log(this.state)
 
     const panels = data
     .filter(
